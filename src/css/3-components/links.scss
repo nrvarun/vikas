@@ -1,0 +1,18 @@
+.link {
+  font-family: $sspro;
+  font-weight: 300;
+  position: relative;
+  font-size: 14px;
+  color: $b0;
+  text-transform: uppercase;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 30%;
+    background-color: $py;
+  }
+}

@@ -1,0 +1,41 @@
+section.our-products
+  .container
+    .row
+      .col-sm-12
+        h2.section-heading.section-heading--light
+          | our Products
+
+    .row.mt-3.mt-sm-5
+      .col-sm-4.col-md-5
+        h2.section-heading--normal.text-uppercase
+          | HI-TECH BAtteries
+        p.section-desc
+          | Design is the method of putting form and content together. Design, just as art, has multiple definitions; there is no single definition. Design can be art. Design can be aesthetics. Design is so simple, that's why it is so complicated.
+
+      .col-sm-8.col-md-7
+        .product-slider-wrapper
+          .swiper-container.products
+            // Additional required wrapper
+            .swiper-wrapper
+              // Slides
+              .swiper-slide
+                .card.card--product
+                  img.product-img(src="./img/product-img1.png" alt="product 1")
+                  h2.product-title
+                    | HI-TECH BAtteries
+              .swiper-slide
+                .card.card--product
+                  img.product-img(src="./img/product-img2.png" alt="product 1")
+                  h2.product-title
+                    | HI-TECH BAtteries
+              .swiper-slide
+                .card.card--product
+                  img.product-img(src="./img/product-img1.png" alt="product 1")
+                  h2.product-title
+                    | HI-TECH BAtteries
+            // If we need pagination
+            .swiper-pagination
+            // If we need navigation buttons
+            .swiper-button-prev
+            .swiper-button-next
+

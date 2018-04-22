@@ -1,0 +1,13 @@
+//Testimonial Section
+
+.our-testimonials {
+  padding: 30px;
+  // background-color: ;
+  background: url('../img/testimonial-bgimg.png') no-repeat, #ffda4f;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-width: $sm) {
+    padding: 40px;
+  }
+}

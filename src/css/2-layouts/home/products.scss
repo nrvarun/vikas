@@ -1,0 +1,76 @@
+//Product section stylings
+
+.our-products {
+  padding: 30px 10px 60px 10px;
+}
+
+.product-title {
+  font-family: $sspro;
+  text-transform: uppercase;
+  color: $b0;
+  font-weight: 700;
+  text-align: center;
+  font-size: 14px;
+
+  @media (min-width: $md) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $lg) {
+    font-size: 18px;
+  }
+}
+
+.product-img {
+  width: 100%;
+  height: 100px;
+  max-width: 240px;
+
+  @media (min-width: $md) {
+    height: 150px;
+  }
+
+  @media (min-width: $lg) {
+    height: 200px;
+  }
+}
+
+.product-slider-wrapper {
+  width: 100%;
+
+  .swiper-slide {
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+      transition: opacity 1s ease;
+      background-color: rgba($color: #000000, $alpha: 0.5);
+    }
+
+    &.swiper-slide-active {
+      opacity: 1;
+
+      &::after {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.product-slider {
+  list-style-type: none;
+  width: 100%;
+}
+
+.swiper-container {
+  width: 100%;
+  // height: 300px;
+}
