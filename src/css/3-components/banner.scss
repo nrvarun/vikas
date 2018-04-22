@@ -28,6 +28,21 @@
     }
   }
 
+  &--about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../img/about-banner.png') no-repeat, $py;
+    // background-size: cover;
+    background-position: right;
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
   &__content {
     display: flex;
     flex-direction: column;

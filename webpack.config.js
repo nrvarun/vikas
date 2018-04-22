@@ -22,7 +22,8 @@ module.exports = {
     // vendor: [
     //     'lodash'
     // ],
-    main: path.join(dirApp, 'index')
+    main: path.join(dirApp, 'index'),
+    // about: path.join(dirApp, 'about'),
   },
 
   externals: {
@@ -46,6 +47,13 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src/index.pug'),
       title: 'Homepage',
+      filename: 'index.html',
+      chunks: ['main']
+    }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'src/about.pug'),
+      filename: 'about.html',
+      title: 'About Us',
       chunks: ['main']
     }),
     new MiniCssExtractPlugin({
