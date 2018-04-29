@@ -12,7 +12,7 @@
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -50px;
+    margin-top: 40px;
 
     @media (min-width: $sm) {
       padding: 60px 60px 40px 60px;
@@ -88,4 +88,20 @@
   left: 0;
   right: 0;
   bottom: 0;
+
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: $py;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.getintouch-heading-container {
+  max-width: 800px;
+  margin: -210px auto 0 auto;
 }

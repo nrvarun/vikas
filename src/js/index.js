@@ -5,10 +5,12 @@
 // Load application styles
 import '../css/main.scss';
 
+import 'aos/src/sass/aos.scss';
+
 import './components/swiperSliders'
 import './components/menuInteractions'
 import './components/tiltInteractions'
-import './components/homeInteractions'
+import './components/allInteractions'
 
 // ================================
 // START YOUR APP HERE
