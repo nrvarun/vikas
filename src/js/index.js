@@ -8,6 +8,7 @@ import '../css/main.scss';
 import './components/swiperSliders'
 import './components/menuInteractions'
 import './components/tiltInteractions'
+import './components/homeInteractions'
 
 // ================================
 // START YOUR APP HERE

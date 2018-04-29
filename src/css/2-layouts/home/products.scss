@@ -3,6 +3,10 @@
 .our-products {
   padding: 30px 10px 60px 10px;
 
+  @media (min-width: $md) {
+    padding: 60px 10px 60px 10px;
+  }
+
   .container {
     max-width: 100%;
     width: 1170px;
@@ -28,7 +32,7 @@
 
 .product-img {
   width: 100%;
-  height: 100px;
+  height: 130px;
   max-width: 240px;
 
   @media (min-width: $md) {
@@ -43,28 +47,56 @@
 .product-slider-wrapper {
   width: 100%;
 
-  .swiper-slide {
-    opacity: 0.5;
-    transition: opacity 0.5s ease;
-    position: relative;
+  .swiper-container {
+    width: 100%;
 
-    &::after {
-      position: absolute;
-      content: '';
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      pointer-events: none;
-      transition: opacity 1s ease;
-      background-color: rgba($color: #000000, $alpha: 0.5);
-    }
+    &.products {
+      padding: 10px;
 
-    &.swiper-slide-active {
-      opacity: 1;
+      .swiper-slide {
+        opacity: 0.5;
+        transition: opacity 0.5s ease;
+        position: relative;
 
-      &::after {
-        opacity: 0;
+        &::after {
+          position: absolute;
+          content: '';
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          pointer-events: none;
+          transition: opacity 1s ease;
+          background-color: rgba($color: #000000, $alpha: 0.5);
+        }
+
+        &::before {
+          position: absolute;
+          content: '';
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 5px;
+          z-index: 90;
+          width: 55px;
+          margin: 0 auto;
+          background-color: $py;
+          transform: scale(0);
+          transform-origin: center;
+          transition: transform 1s ease;
+        }
+
+        &.swiper-slide-active {
+          opacity: 1;
+
+          &::after {
+            opacity: 0;
+          }
+
+          &::before {
+            transform: scale(1);
+          }
+        }
       }
     }
   }
@@ -75,7 +107,23 @@
   width: 100%;
 }
 
-.swiper-container {
-  width: 100%;
-  // height: 300px;
+.swiper-pagination.product {
+  .swiper-pagination-bullet {
+    height: 3px;
+    width: 15px;
+    margin-right: 2px;
+    opacity: 0.8;
+    background-color: $py;
+    transition: all 0.5s ease;
+
+    &.swiper-pagination-bullet-active {
+      width: 35px;
+      background-color: #464540;
+    }
+  }
+}
+
+.products-link {
+  position: absolute;
+  right: 20px;
 }

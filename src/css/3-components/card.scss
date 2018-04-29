@@ -10,8 +10,17 @@
   }
 
   &--about {
-    max-width: 600px;
-    margin-top: -90px;
+    max-width: 700px;
+    margin-top: -80px;
+    padding: 20px 30px 30px 30px;
+
+    @media (min-width: $sm) {
+      padding: 40px 60px 60px 60px;
+    }
+
+    @media (min-width: $md) {
+      padding: 50px 80px 80px 80px;
+    }
   }
 
   &--product {
@@ -20,6 +29,11 @@
     @media (min-width: $sm) {
       padding: 30px;
     }
+  }
+
+  &--timeline {
+    max-width: 700px;
+    margin: 0 auto;
   }
 }
 

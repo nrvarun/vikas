@@ -1,0 +1,91 @@
+//Contact stlyings
+
+.getintouch {
+  &__wrapper {
+    position: relative;
+    z-index: 999;
+    background-color: $w;
+    padding: 30px;
+    margin-bottom: 30px;
+    transform: translateY(10px);
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+
+    @media (min-width: $sm) {
+      padding: 60px 60px 40px 60px;
+      max-width: 600px;
+      margin-bottom: 60px;
+    }
+
+    @media (min-width: $md) {
+      max-width: 750px;
+      padding: 50px;
+      margin-bottom: 80px;
+    }
+
+    @media (min-width: $lg) {
+      max-width: 800px;
+      padding: 80px 120px;
+      margin-bottom: 90px;
+    }
+  }
+
+  &__form-title {
+    font-family: $sspro;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    letter-spacing: 0.3px;
+
+    @media (min-width: $sm) {
+      font-size: 20px;
+    }
+
+    @media (min-width: $md) {
+      font-size: 22px;
+    }
+  }
+
+  &__submit-btn {
+    // background-color: $py;
+    color: $py;
+    border-radius: 50%;
+    padding: 10px;
+    outline: none;
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+    border: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: relative;
+    background: url("../img/submit-btn-bgimg.png") no-repeat $py;
+    background-position: center;
+    background-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    transform: scale(1);
+    box-shadow: 0 0 7px 0 transparent;
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 7px 0 #dcdcdc;
+    }
+  }
+}
+
+.map {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

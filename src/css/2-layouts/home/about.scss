@@ -6,3 +6,22 @@
     padding: 40px;
   }
 }
+
+.banner-slider-wrapper {
+  width: 100%;
+  max-width: 250px;
+  overflow: hidden;
+
+  @media (min-width: $sm) {
+    max-width: 400px;
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    // max-height: 100px;
+  }
+}

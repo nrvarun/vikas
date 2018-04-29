@@ -1,3 +1,4 @@
 dist/**/*.css
-src/css/1-plugins/**/*.scss
 .stylelintrc
+src/css/1-plugins/**/*.scss
+src/css/3-components/inputs.scss

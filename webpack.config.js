@@ -56,6 +56,12 @@ module.exports = {
       title: 'About Us',
       chunks: ['main']
     }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'src/contact.pug'),
+      filename: 'contact.html',
+      title: 'Get in touch',
+      chunks: ['main']
+    }),
     new MiniCssExtractPlugin({
       filename: 'css/[name].css',
       chunkFilename: '[id].css'

@@ -5,6 +5,11 @@
   padding: 10px;
   display: flex;
 
+  @media (min-width: $sm) {
+    padding: 20px;
+  }
+
+
   &__text {
     color: $w;
     font-size: 12px;
