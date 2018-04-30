@@ -4,13 +4,13 @@ html(lang='en')
   include pug/base/header
 
   body
+    main
+      include pug/layouts/about/banner
+      include pug/layouts/about/content
 
-    include pug/layouts/about/banner
-    include pug/layouts/about/content
+      include pug/base/footer
 
-    include pug/base/footer
-
-    include pug/components/overlay
-    include pug/components/sidebar
+      include pug/components/overlay
+      include pug/components/sidebar
 
 

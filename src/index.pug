@@ -4,16 +4,16 @@ html(lang='en')
   include pug/base/header
 
   body
+    main
+      include pug/layouts/home/banner
+      include pug/layouts/home/about
+      include pug/layouts/home/products
+      include pug/layouts/home/testimonial
 
-    include pug/layouts/home/banner
-    include pug/layouts/home/about
-    include pug/layouts/home/products
-    include pug/layouts/home/testimonial
+      include pug/base/footer
 
-    include pug/base/footer
+      include pug/components/overlay
+      include pug/components/sidebar
 
-    include pug/components/overlay
-    include pug/components/sidebar
-
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js")
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js")
 
