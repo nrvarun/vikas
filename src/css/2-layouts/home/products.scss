@@ -115,6 +115,7 @@
     opacity: 0.8;
     background-color: $py;
     transition: all 0.5s ease;
+    border-radius: 0;
 
     &.swiper-pagination-bullet-active {
       width: 35px;

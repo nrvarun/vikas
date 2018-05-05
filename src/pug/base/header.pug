@@ -8,10 +8,17 @@ header.header
         ul.navbar-nav
             li.nav-item.active
                 a.nav-link(href='index.html')
-                    | Home
+                    span(data-linktitle="home")
+                      | Home
             li.nav-item
-                a.nav-link(href='about.html') About us
+                a.nav-link(href='about.html')
+                  span(data-linktitle="about us")
+                    | About us
             li.nav-item
-                a.nav-link(href='javascript:void(0);') Products
+                a.nav-link(href='javascript:void(0);')
+                  span(data-linktitle="products")
+                    | Products
             li.nav-item
-                a.nav-link(href='contact.html') Contact us
+                a.nav-link(href='contact.html')
+                  span(data-linktitle="contact us")
+                    | Contact us
