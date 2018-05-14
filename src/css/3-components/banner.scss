@@ -38,7 +38,7 @@
 
   &__sub-heading {
     font-family: $osw;
-    font-size: 20px;
+    font-size: 18px;
     color: $b0;
     letter-spacing: 0.51px;
     font-weight: 300;
@@ -51,17 +51,17 @@
 
   &__heading {
     font-family: $osw;
-    font-size: 30px;
+    font-size: 25px;
     color: $w;
     font-weight: 500;
     text-transform: uppercase;
 
     @media (min-width: $md) {
-      font-size: 40px;
+      font-size: 30px;
     }
 
     @media (min-width: $lg) {
-      font-size: 50px;
+      font-size: 40px;
     }
   }
 

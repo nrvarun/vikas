@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
   const productSwiper = document.querySelectorAll('.swiper-container.products');
   const testimonialsSwiper = document.querySelectorAll('.swiper-container.testimonials');
   const homeBannerSwiper = document.querySelectorAll('.swiper-container.home');
