@@ -4,6 +4,10 @@
 
 body {
   font-family: $roboto;
+
+  &.in-transition {
+    transition: transform 900ms ease;
+  }
 }
 
 main {

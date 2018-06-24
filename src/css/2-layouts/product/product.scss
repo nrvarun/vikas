@@ -68,7 +68,7 @@
   padding: 30px;
 
   .container {
-    max-width: 800px;
+    max-width: 950px;
     margin: 0 auto;
   }
 
@@ -204,5 +204,56 @@
       height: 18px;
       width: 12px;
     }
+  }
+}
+
+.product-table {
+  border: 1px solid #e8e8e9;
+
+  thead,
+  tbody,
+  tr,
+  td {
+    font-family: $roboto;
+    font-size: 12px;
+  }
+
+  thead {
+    color: #151a26;
+    font-weight: 400;
+    background-color: #e8e8e9;
+  }
+
+  tbody {
+    color: #999999;
+    font-family: $roboto;
+    font-size: 12px;
+    font-weight: 400;
+
+    tr {
+      &:nth-of-type(even) {
+        background-color: #fafafb;
+      }
+
+      td {
+        border: 1px solid #f3f3f3;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .backup {
+    min-width: 140px;
+    max-width: 140px;
+
+    @media (min-width: $sm) {
+      max-width: 140px;
+    }
+  }
+
+  thead th {
+    text-align: left;
+    vertical-align: middle;
+    border: 1px solid #dedede;
   }
 }

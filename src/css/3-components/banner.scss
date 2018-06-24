@@ -36,10 +36,6 @@
   }
 
   &--about {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     &::before {
       position: absolute;
       content: '';
@@ -52,6 +48,14 @@
       z-index: 30;
       background-color: $b0;
       opacity: 0.5;
+    }
+
+    @media (min-width: $sm) {
+      height: 450px;
+    }
+
+    @media (min-width: $md) {
+      height: 550px;
     }
   }
 
