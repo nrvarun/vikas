@@ -1,16 +1,11 @@
-section.aboutus
-  .container
-    .col-sm-12.center
-      .card-container
-        .card.text-center.card--about(data-aos="flip-down")
-          .card__header.d-flex.justify-content-center.align-items-center
-            h2.section-heading
-              | about us
-          .card__body.mt-2
-            p.section-desc.text-center
-              strong.mr-1 VIKAS INDUSTRIES
-              | - a well known company for top quality products, established for the manufacture of various types of Lead Acid Batteries in a wide range, is situated at PUTTUR, Dakshina Kannada district, India.
-          .card__actions.d-flex.justify-content-center.align-items-center
-            a(href="about.html").link.mt-3
-              | read more
-
+section(class='aboutus')
+  div(class='container')
+    div(class='row')
+      div(class='col-sm-12 text-center aboutus__content')
+        //- sectionheading(heading='about us')
+        h2.section-heading about us
+        p.section-desc
+          strong VIKAS INDUSTRIES -
+          | a well known company for top quality products, established for the manufacture of various types of Lead Acid Batteries in a wide range, is situated at PUTTUR, Dakshina Kannada district, India.'
+        a( href="about.html" class='button mt-2')
+          | read more

@@ -1,27 +1,30 @@
-//Home Styles
 .aboutus {
-  padding: 20px;
+  padding: 50px 20px;
 
   @media (min-width: $sm) {
-    padding: 40px;
-  }
-}
-
-.banner-slider-wrapper {
-  width: 100%;
-  max-width: 250px;
-  overflow: hidden;
-
-  @media (min-width: $sm) {
-    max-width: 450px;
+    padding: 60px 40px;
   }
 
-  .swiper-container {
-    width: 100%;
-    height: 100%;
+  @media (min-width: $md) {
+    padding: 80px 40px;
   }
 
-  .swiper-slide {
-    // max-height: 100px;
+  @media (min-width: $lg) {
+    padding: 100px 40px;
+  }
+
+  &__content {
+    @media (min-width: $sm) {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: $md) {
+      max-width: 600px;
+    }
+
+    @media (min-width: $lg) {
+      max-width: 720px;
+    }
   }
 }

@@ -1,15 +1,21 @@
-footer.footer
-  .container
-    .row
-      .col-sm-12
-        .d-sm-flex.justify-content-between
-          ul.footer-list
-            li.footer-list__item
-              h2.footer__text
-                | © Copyright 2018, VIKAS Industries. All rights reserved.
-            li.footer-list__item
-              p.footer__text
-                | Crafted by : Design Garrage
-
-          p.footer__text.text-uppercase.contact
-            | Phone  +91 8251 231 445 / 232 445
+footer(class='footer')
+  div(class='footer__location-details')
+    .footer__map
+      #vikasMap
+    div(class='footer__map-data')
+      .d-block
+        h2(class='section-heading section-heading--normal mb-3') get in touch
+        address(class='footer__address')
+          | 1-5/1, Mura, Nehru Nagar, Puttur, D.K. District, Karnataka State. India. PIN: 574 203
+        div(class='d-flex align-items-center mb-2')
+          img(class='contact-icon', src='./img/phone.svg', alt='mail icon', aria-label='phone icon')
+          p(class='contact-item m-0') +91 8251 231445/ 232445
+        div(class='d-flex align-items-center')
+          img(class='contact-icon', src='./img/mail.svg', alt='mail icon', aria-label='mail icon')
+          a(class='contact-item text-underline mb-2', href='mailto:omvikasindustries@gmail.com') omvikasindustries@gmail.com
+        div(class='d-flex align-items-center')
+          img(class='contact-icon', src='./img/map.svg', alt='map icon', aria-label='map icon')
+          a(class='contact-item text-underline', rel='noopener noreferrer', target='_blank', href='https://goo.gl/maps/W6FSmUz3hAu') View on Google map
+div(class='footer__content d-sm-flex w-100 justify-content-between align-items-center')
+    p.footer__text © Copyright 2018, VIKAS Industries. All rights reserved.
+    p.footer__text Crafted by : Design Garrage

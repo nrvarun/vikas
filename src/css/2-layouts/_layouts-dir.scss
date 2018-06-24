@@ -1,12 +1,8 @@
 // Layouts SCSS Files
 
 //Home page
+@import 'home/banner';
 @import 'home/about';
 @import 'home/products';
-@import 'home/testimonial';
-
-//about page
-@import 'about/about';
-
-//Contact page
-@import 'contact/contact';
+@import 'home/testimonials';
+@import 'product/product';

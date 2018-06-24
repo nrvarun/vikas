@@ -1,12 +1,9 @@
-section.banner.banner--about
-  .container
-    .row
-      .col-sm-12.text-left
-        .banner__content(data-aos="fade-right")
-          h4.banner__sub-heading
-            | High Performance on all
-            br
-            | Solar Applications
-  .ocean
-    .wave
-    .wave
+section(class='banner banner--home d-flex')
+  img(class='banner__img', src='./img/banner-img.png', alt='banner')
+  div(class='container-fluid p-0 d-flex')
+    div(class='row w-100 m-0 d-flex')
+      div(class='col-md-6 h-50')
+        h2(class='d-none') Section 1
+      div(class='col-md-6 banner__content')
+        div(class='banner-slider')
+          h2(class='banner-heading text-left') About us

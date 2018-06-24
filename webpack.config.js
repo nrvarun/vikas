@@ -20,7 +20,8 @@ const dirStyles = path.join(__dirname, 'src/css');
 module.exports = {
   entry: {
     // vendor: [
-    //     'lodash'
+    //     // 'jquery',
+    //     // 'slick-carousel'
     // ],
     main: path.join(dirApp, 'index'),
     // about: path.join(dirApp, 'about'),
@@ -57,9 +58,9 @@ module.exports = {
       chunks: ['main']
     }),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'src/contact.pug'),
-      filename: 'contact.html',
-      title: 'Get in touch',
+      template: path.join(__dirname, 'src/products.pug'),
+      filename: 'products.html',
+      title: 'Products',
       chunks: ['main']
     }),
     new MiniCssExtractPlugin({

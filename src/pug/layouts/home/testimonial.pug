@@ -1,44 +1,33 @@
-section.our-testimonials
-  .container
-    .row
-      .col-sm-12
-        h2.section-heading.section-heading--testimonials.mb-5(data-aos="fade-right")
-          | OUR Testimonials
+section(class='testimonials')
+  div(class='container')
+    div(class='row')
+      div(class='col-sm-12 text-center')
+        h2.section-heading testimonials
+      .col-sm-12.text-center.testimonials-wrapper
 
-    .row
-      .col-sm-12
-         .product-slider-wrapper(data-aos="flip-up")
-            .swiper-container.testimonials
-              // Additional required wrapper
-              .swiper-wrapper
-                // Slides
-                .swiper-slide
-                  .card.card--timeline.testimonial-item
-                    img.testimonial-item__quote(src="./img/testimonial-quote.png" alt="quote")
-                    p.section-desc
-                      | Design is the method of putting form and content together. Design, just as art, has multiple definitions; there is no single definition. Design can be art. Design can be aesthetics. Design is so simple, that's why it is so complicated.
-                    p.testimonial-item__name
-                      | Ramachandra
-                    p.testimonial-item__desig
-                      | Director-Vikas
-                .swiper-slide
-                  .card.card--timeline.testimonial-item
-                    img.testimonial-item__quote(src="./img/testimonial-quote.png" alt="quote")
-                    p.section-desc
-                      | Design is the method of putting form and content together. Design, just as art, has multiple definitions; there is no single definition. Design can be art. Design can be aesthetics. Design is so simple, that's why it is so complicated.
-                    p.testimonial-item__name
-                      | Ramachandra
-                    p.testimonial-item__desig
-                      | Director-Vikas
-                .swiper-slide
-                  .card.card--timeline.testimonial-item
-                    img.testimonial-item__quote(src="./img/testimonial-quote.png" alt="quote")
-                    p.section-desc
-                      | Design is the method of putting form and content together. Design, just as art, has multiple definitions; there is no single definition. Design can be art. Design can be aesthetics. Design is so simple, that's why it is so complicated.
-                    p.testimonial-item__name
-                      | Ramachandra
-                    p.testimonial-item__desig
-                      | Director-Vikas
-            // If we need navigation buttons
-            .swiper-button-prev.testimonial
-            .swiper-button-next.testimonial
+        ul.testimonial-slider
+
+          li.testimonial-slider__slide
+            div(class='testimony')
+              h3(class='testimony__content')
+                | With greater access to teachers outside of academia, higher education institutions and learning platforms can bring in relevant real-world expertise. For experts, this is a great opportunity to build reputation, meet future peers or customers and increase their impact.
+              p(class='testimony__author')
+                | - By
+                span.mx-1 Merry Jain
+
+          li.testimonial-slider__slide
+            div(class='testimony')
+              h3(class='testimony__content')
+                | With greater access to teachers outside of academia, higher education institutions and learning platforms can bring in relevant real-world expertise. For experts, this is a great opportunity to build reputation, meet future peers or customers and increase their impact.
+              p(class='testimony__author')
+                | - By
+                span.mx-1 Merry Jain
+
+          li.testimonial-slider__slide
+            div(class='testimony')
+              h3(class='testimony__content')
+                | With greater access to teachers outside of academia, higher education institutions and learning platforms can bring in relevant real-world expertise. For experts, this is a great opportunity to build reputation, meet future peers or customers and increase their impact.
+              p(class='testimony__author')
+                | - By
+                span.mx-1 Merry Jain
+

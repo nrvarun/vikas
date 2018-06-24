@@ -2,66 +2,36 @@
 
 .banner {
   position: relative;
-  padding: 80px 0 70px 0;
+  // padding: 80px 0 70px 0;
   min-height: 400px;
-  background-color: $py;
+  height: 100vh;
 
-  @media (min-width: $md) {
-    min-height: 500px;
-    padding: 40px 0 100px 0;
+  @media (min-width: $sm) {
+    height: 550px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    opacity: 0.7;
   }
 
   &--home {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    @media (min-width: $md) {
-      min-height: 500px;
-      padding: 40px 0 100px 0;
-    }
-  }
-
-  &__content {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    align-items: flex-start;
-    justify-content: center;
-  }
-
-  &__sub-heading {
-    font-family: $osw;
-    font-size: 18px;
-    color: $b0;
-    letter-spacing: 0.51px;
-    font-weight: 300;
-    text-transform: capitalize;
+    // background: url('../assets/img/banner-img.png') no-repeat;
+    // background-position: left center;
+    // background-size: cover;
 
     @media (min-width: $sm) {
-      font-size: 30px;
+      height: 600px;
     }
-  }
-
-  &__heading {
-    font-family: $osw;
-    font-size: 25px;
-    color: $w;
-    font-weight: 500;
-    text-transform: uppercase;
 
     @media (min-width: $md) {
-      font-size: 30px;
-    }
-
-    @media (min-width: $lg) {
-      font-size: 40px;
+      height: 650px;
     }
   }
 
@@ -69,51 +39,94 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('../img/about-banner.png') no-repeat, $py;
-    // background-size: cover;
-    background-position: right;
 
-    .container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 30;
+      background-color: $b0;
+      opacity: 0.5;
+    }
+  }
 
-      @media (min-width: $sm) {
-        justify-content: flex-start;
-      }
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
 
-      .banner__content {
-        @media (min-width: $sm) {
-          justify-content: flex-start;
-        }
-      }
+    @media (min-width: $sm) {
+      height: 100%;
+    }
+  }
 
-      .banner__sub-heading {
-        text-transform: uppercase;
+  &__content {
+    position: relative;
+    z-index: 30;
+    display: flex;
+    padding: 40px 30px 20px 40px;
+    flex-direction: column;
+    height: 50%;
 
-        @media (min-width: $md) {
-          font-size: 40px;
-        }
+    &::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      z-index: 10;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $py;
+      opacity: 0.8;
+    }
 
-        @media (min-width: $lg) {
-          font-size: 50px;
-        }
-      }
+    @media (min-width: $sm) {
+      height: 100%;
     }
   }
 }
 
-.banner-dots {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  z-index: 0;
+
+.banner-heading {
+  color: $w;
+  z-index: 40;
+  font-size: 30px;
+  font-family: $osw;
+  text-transform: capitalize;
+
+  @media (min-width: $sm) {
+    font-size: 40px;
+  }
+
+  @media (min-width: $md) {
+    font-size: 45px;
+  }
+
+  @media (min-width: $lg) {
+    font-size: 50px;
+  }
 }
 
-.banner-product-img {
-  width: 100%;
-  max-width: 490px;
+.banner-subheading {
+  font-family: $osw;
+  font-size: 20px;
+  color: $w;
+  text-transform: capitalize;
+  letter-spacing: 0.42px;
+
+  @media (min-width: $sm) {
+    font-size: 25px;
+  }
 }

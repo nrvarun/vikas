@@ -1,0 +1,49 @@
+//Sidenav stylings
+
+.sidenav {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: 50;
+  display: flex;
+  position: fixed;
+  visibility: hidden;
+  pointer-events: none;
+  background-color: $w;
+  transition: all 0.5s ease;
+  transform: translateY(-50px);
+
+  .nav-item {
+    display: none;
+  }
+
+  .nav-link {
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 32px;
+  }
+
+  &.show {
+    pointer-events: all;
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+
+    .nav-item {
+      display: block;
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+}
+
+.navbar-nav {
+  @media (max-width: $sm - 1) {
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: auto;
+  }
+}

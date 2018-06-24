@@ -5,11 +5,11 @@
 // Load application styles
 import '../css/main.scss';
 
-import 'aos/src/sass/aos.scss';
+// import 'aos/src/sass/aos.scss';
 
-import './components/swiperSliders'
+import './components/loadMap'
+import './components/sliders'
 import './components/menuInteractions'
-import './components/tiltInteractions'
 import './components/allInteractions'
 
 // ================================
