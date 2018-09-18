@@ -48,7 +48,7 @@
     }
   }
 
-  &:hover {
+  &.active {
     transform: scale(1);
     z-index: 30;
 
